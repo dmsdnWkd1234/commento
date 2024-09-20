@@ -134,10 +134,10 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .delete-alarm-btn {
-    background-color: red;
-    color: white;
+    background-color: white;
+    color: red;
     border: none;
-    padding: 5px;
     cursor: pointer;
     margin-left: 25px;
+    font-size: 25px;
 }

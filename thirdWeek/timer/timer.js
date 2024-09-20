@@ -69,23 +69,27 @@ const handleOnInput = (element, maxLength) => {
 };
 
 const addAlarm = () => {
-    const hour = document.querySelector('.hour').value;
-    const min = document.querySelector('.min').value;
-    const sec = document.querySelector('.sec').value;
+    if (currentBattery !== 0) {
+        const hour = document.querySelector('.hour').value;
+        const min = document.querySelector('.min').value;
+        const sec = document.querySelector('.sec').value;
 
-    if (!hour || !min || !sec) return; // 모든 값이 입력되었는지 확인
+        if (!hour || !min || !sec) return; // 모든 값이 입력되었는지 확인
 
-    // 시/분/초 값을 객체로 만들어 배열에 추가
-    const alarmTime = { id: Date.now(), hour, min, sec }; // 고유 ID 부여
-    alarms.push(alarmTime);
+        // 시/분/초 값을 객체로 만들어 배열에 추가
+        const alarmTime = { id: Date.now(), hour, min, sec }; // 고유 ID 부여
+        alarms.push(alarmTime);
 
-    // 알람 목록 갱신
-    renderAlarms();
+        // 알람 목록 갱신
+        renderAlarms();
 
-    // 입력값 초기화
-    document.querySelector('.hour').value = '';
-    document.querySelector('.min').value = '';
-    document.querySelector('.sec').value = '';
+        // 입력값 초기화
+        document.querySelector('.hour').value = '';
+        document.querySelector('.min').value = '';
+        document.querySelector('.sec').value = '';
+    } else {
+        alert('배터리를 충전해주세염');
+    }
 };
 
 // 알람 목록을 출력하는 함수

@@ -119,5 +119,25 @@ input[type='number']::-webkit-outer-spin-button {
 
 .alarm-list {
     width: 100%;
+    flex-grow: 1;
+    overflow-y: auto; /* 스크롤 가능하게 */
+}
+
+.alarm-list div {
     height: 10%;
+    border-bottom: 1px solid black;
+    line-height: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-alarm-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 25px;
 }

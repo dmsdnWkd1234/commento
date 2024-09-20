@@ -1,7 +1,7 @@
-let currentBattery = 100;
-const currentTime = document.querySelector('.current-time');
+let currentBattery = 100; // 현재 배터리
+const currentTime = document.querySelector('.current-time'); //현재
 const currentDay = document.querySelector('.current-date');
-const timeInput = document.querySelector('.time-input');
+const timeInput = document.querySelectorAll('.time-input');
 
 const battery = () => {
     const batteryElement = document.querySelector('.current-battery');
@@ -62,8 +62,10 @@ const handleOnInput = (element, maxLength) => {
     }
 };
 
-timeInput.addEventListener('input', function () {
-    handleOnInput(this, 2);
+timeInput.forEach((ipnut) => {
+    ipnut.addEventListener('input', function () {
+        handleOnInput(this, 2);
+    });
 });
 
 battery(); // 현재 배터리

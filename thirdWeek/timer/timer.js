@@ -74,16 +74,13 @@ const addAlarm = () => {
         const min = document.querySelector('.min').value;
         const sec = document.querySelector('.sec').value;
 
-        if (!hour || !min || !sec) return; // 모든 값이 입력되었는지 확인
+        if (!hour || !min || !sec) return;
 
-        // 시/분/초 값을 객체로 만들어 배열에 추가
-        const alarmTime = { id: Date.now(), hour, min, sec }; // 고유 ID 부여
+        const alarmTime = { id: Date.now(), hour, min, sec };
         alarms.push(alarmTime);
 
-        // 알람 목록 갱신
         renderAlarms();
 
-        // 입력값 초기화
         document.querySelector('.hour').value = '';
         document.querySelector('.min').value = '';
         document.querySelector('.sec').value = '';
@@ -92,7 +89,6 @@ const addAlarm = () => {
     }
 };
 
-// 알람 목록을 출력하는 함수
 const renderAlarms = () => {
     const alarmList = document.querySelector('.alarm-list');
     alarmList.innerHTML = alarms

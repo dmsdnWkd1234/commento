@@ -1,5 +1,4 @@
 let alarms = [];
-console.log(alarms);
 let currentBattery = 100; // 현재 배터리
 const currentTime = document.querySelector('.current-time'); //현재
 const currentDay = document.querySelector('.current-date');

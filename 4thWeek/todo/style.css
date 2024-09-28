@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'BlackHanSans-Regular';
+}
+@font-face {
+    font-family: 'BlackHanSans-Regular';
+    src: url('./fonts/BlackHanSans-Regular.ttf');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d8dff6;
+}
+
+h1 {
+    margin: 5vh;
+    color: white;
+}
+
+.root {
+    margin-top: 5vh;
+    width: 30vw;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.add-todo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.text-area {
+    width: 50%;
+    height: 70%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: bottom;
+    background-color: transparent;
+    margin-left: 2.8vw;
+    border-bottom: 3px solid black;
+}
+
+.add-Btn {
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50% 50% 0 50%;
+    width: 2vw;
+    height: 2vw;
+    background-color: #4382ff;
+    color: white;
+    text-align: ceter;
+    line-height: 2.3vw;
+    margin-left: 0.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3cap;
+}
+
+.todo-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    position: relative;
+}
+
+.todo-delete-btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: red;
+    position: absolute;
+    right: 30px;
+}
+
+.todo-patch-btn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    color: lightblue;
+    position: absolute;
+    right: 60px;
+}
+
+.todo-checked {
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+}
+
+.todo-value-completed {
+    text-decoration: line-through 3px solid black;
+}

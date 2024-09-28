@@ -90,14 +90,14 @@ h2 {
 }
 
 .result-history {
-    max-height: 70%; /* aside의 나머지 공간 활용 */
-    overflow-y: auto; /* 스크롤 가능 */
-    padding: 10px; /* 여백 추가 */
+    max-height: 70%;
+    overflow-y: auto;
+    padding: 10px;
 }
 
 .result-history div {
-    border: 1px solid black; /* 각 결과 구분선 */
-    padding: 5px; /* 여백 */
-    margin: 5px 0; /* 결과 간격 */
-    background-color: #f9f9f9; /* 배경 색상 */
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
 }

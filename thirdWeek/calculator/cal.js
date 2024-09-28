@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.btn');
     const resultArea = document.querySelector('.result');
-    const resultHistory = document.querySelector('.result-history'); // 결과 기록 div 선택
+    const resultHistory = document.querySelector('.result-history');
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -10,15 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (value === '=') {
                 try {
                     const result = calculateExpression(resultArea.value);
-                    resultArea.value = result; // 계산 결과 표시
-                    addToHistory(resultArea.value); // 결과를 기록에 추가
+                    resultArea.value = result;
+                    addToHistory(resultArea.value);
                 } catch (error) {
-                    resultArea.value = 'Error'; // 계산 오류 처리
+                    resultArea.value = 'Error';
                 }
             } else if (value === 'C') {
-                resultArea.value = ''; // 수식 초기화
+                resultArea.value = '';
             } else {
-                resultArea.value += value; // textarea에 버튼 값 추가
+                resultArea.value += value;
             }
         });
     });
@@ -77,10 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return stack[0];
     }
 
-    // 계산 결과를 기록하는 함수
     function addToHistory(result) {
         const historyItem = document.createElement('div');
-        historyItem.textContent = result; // 계산 결과를 div에 추가
-        resultHistory.appendChild(historyItem); // 기록 div에 추가
+        historyItem.textContent = result;
+        resultHistory.appendChild(historyItem);
     }
 });

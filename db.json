@@ -33,29 +33,28 @@
   ],
   "users": [
     {
-      "name": "asd",
-      "id": "id1",
-      "pw": "123"
+      "id": "ccf4",
+      "userId": "ㅁㄴㅇ",
+      "password": "ㅁㄴㅇ",
+      "email": "ㅁㄴㅇ"
     },
     {
-      "name": "asd2",
-      "id": "id2",
-      "pw": "123"
+      "id": "9f9b",
+      "userId": "ㅁㄴㅇ",
+      "password": "ㅁㄴㅇ",
+      "email": "ㅁㄴㅇ"
     },
     {
-      "name": "asd3",
-      "id": "id3",
-      "pw": "123"
+      "id": "e3d8",
+      "userId": "ㅁㄴㅇ",
+      "password": "",
+      "email": ""
     },
     {
-      "name": "asd4",
-      "id": "id4",
-      "pw": "123"
-    },
-    {
-      "name": "asd5",
-      "id": "id5",
-      "pw": "123"
+      "id": "be2c",
+      "userId": "ㅁㄴㅇㅁㅁ",
+      "password": "ㅁㄴㅇ",
+      "email": "ㅁㄴㅇ"
     }
   ]
 }
